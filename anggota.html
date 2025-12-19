@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Data Anggota — Sistem Manajemen</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Data Anggota</h1>
+      <p class="sub">Tabel anggota perusahaan — prototype statis/klien</p>
+    </div>
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a href="index.html" class="nav-item">Beranda</a>
+        <a href="anggota.html" class="nav-item">Data Anggota</a>
+        <a href="form.html" class="nav-item">Pendaftaran</a>
+        <a href="info.html" class="nav-item">Info / Proposal</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <div class="toolbar">
+        <a class="btn" href="form.html">Tambah Anggota Baru</a>
+        <button class="btn outline" id="exportBtn">Export CSV</button>
+      </div>
+
+      <table id="membersTable" class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Jabatan</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- diisi oleh script.js -->
+        </tbody>
+      </table>
+
+      <div id="emptyNotice" class="muted">Belum ada data anggota — tambahkan melalui tombol "Tambah Anggota Baru".</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Prototype — data disimpan lokal di browser (localStorage).</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pendaftaran Anggota — Sistem Manajemen</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Form Pendaftaran Anggota</h1>
+      <p class="sub">Formulir untuk menambah atau memperbarui data anggota (simulasi lokal)</p>
+    </div>
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a href="index.html" class="nav-item">Beranda</a>
+        <a href="anggota.html" class="nav-item">Data Anggota</a>
+        <a href="form.html" class="nav-item">Pendaftaran</a>
+        <a href="info.html" class="nav-item">Info / Proposal</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <form id="memberForm" class="card">
+      <input type="hidden" id="memberId" value="" />
+
+      <label for="name">Nama lengkap</label>
+      <input id="name" required placeholder="Nama anggota" />
+
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="nama@contoh.com" />
+
+      <label for="position">Jabatan / Peran</label>
+      <input id="position" placeholder="Contoh: Staff, Manager, Anggota" />
+
+      <label for="status">Status</label>
+      <select id="status">
+        <option value="Aktif">Aktif</option>
+        <option value="Nonaktif">Nonaktif</option>
+        <option value="Cuti">Cuti</option>
+      </select>
+
+      <div class="form-actions">
+        <button class="btn" type="submit">Simpan</button>
+        <a class="btn outline" href="anggota.html">Batal</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Data tersimpan di browser — untuk prototipe statis sesuai proposal. :contentReference[oaicite:3]{index=3}</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
